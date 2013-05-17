@@ -18,4 +18,4 @@
         - else
           %td= "#{t.table} ##{t.item}"
         %td= t.message.class.respond_to?(:in?)
-        %td= t.message.in?('delete', 'new') ? t("admin.actions.#{t.message}.done").capitalize : t.message
+        %td= t.message.in?(['delete', 'new']) ? t("admin.actions.#{t.message}.done").capitalize : t.message
